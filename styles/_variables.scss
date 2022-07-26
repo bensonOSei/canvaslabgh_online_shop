@@ -1,0 +1,61 @@
+//* colors
+$primary-color-1000: #1a0e31;
+$primary-color-1000-a: #1a0e3147;
+$primary-color-900: #5900ff;
+$primary-color-900-a: #5800FF;
+$primary-color-700: #0096FF;
+$primary-color-700-a: #0095ff73;
+$primary-color-500: #00d9ff6f;
+$primary-color-500-a: #00D7FF;
+$primary-color-400: #f7ffff;
+$primary-color-400-a: #72ffffa3;
+
+$secondary-color-500: #eeecec;
+$secondary-color-500-a: #eeececa3;
+$secondary-color-400: #fff;
+$secondary-color-400-a: #fff5;
+
+//* font- variables
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+$font-family-primary:'Poppins', sans-serif;
+$font-family-header: $font-family-primary;
+
+$font-weigth-normal: 400;
+$font-weigth-heavy: 600;
+$font-weigth-heavy-x: 800; 
+
+
+$size-xxs: 0.8125rem;
+$size-xs: 0.875rem;
+$size-s: 0.9375rem;
+$size-m: 1rem;
+$size-l: 1.125rem;
+$size-xl: 1.25rem;
+$size-xxl: 1.5rem;
+$size-xxxl: 1.75rem;
+$size-huge: 2rem;
+
+
+@mixin imageFit($object-fit) {
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: $object-fit;
+    }
+}
+
+@mixin flexCenter($width,$height) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $width;
+    height: $height;
+}
+
+
+@mixin gridCenter($width,$height) {
+    display: grid;
+    place-items: center;
+    width: $width;
+    height: $height;
+}

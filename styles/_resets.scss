@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    font-family: $font-family-primary;
+    color: $primary-color-1000;
+    background-color: $primary-color-400;
+    margin: 0;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+button{
+    padding: $size-m;
+}
