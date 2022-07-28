@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script defer src="js/cart.js"></script>
+    <script defer src="js/app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6db44154cb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Canvas Lab Gh</title>
+
+    <base href="index.html" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <h1>Logo</h1>
+      </div>
+      <nav>
+        <i class="fa-solid fa-times fs-xl" role="button" aria-label="button to close top navigation on mobile view"></i>
+
+        <div class="nav-list">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+        </div>
+
+        <div class="nav-icons flex-row-align-center">
+          <div class="cart">
+            <div class="cart-number">
+              <p class="cartQuantity"></p>
+            </div>
+            <a href="cart.html"><i class="fa-solid fa-shopping-cart"></i></a>
+          </div>
+          <a
+            href=""
+            class="button background-color-prim-700 hover color-prim-400"
+          >
+            Sign Up
+          </a>
+        </div>
+      </nav>
+
+      <i class="fa-solid fa-bars fs-xl" role="button" aria-label="button to close top navigation on mobile view"></i>
+    </header>
+
+    <main>
+      <div class="product-container">
+        <div class="product-image">
+          <img src="" alt="product image">
+        </div>
+        <div class="product-description">
+          <h1 id="product-title">Title</h1>
+          <p id="product-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis
+            obcaecati placeat in nesciunt adipisci, fugiat necessitatibus? Id
+            neque delectus sapiente illo odio cupiditate aliquid distinctio,
+            similique voluptatem, a quia eaque!
+          </p>
+          <p class="fs-xl fw-heavy">GHS <span id="product-price"></span></p>
+          <div class="product-quantity">
+            <button id="dec-quantity" class="dec-quantity fw-heavy small-btn">-</button>
+            <p class="fs-xl product-quantity-el" id="product-quantity">1</p>
+            <button id="inc-quantity" class="inc-quantity fw-heavy small-btn">+</button>
+          </div>
+
+            <div class="buttons">
+                <a href="cart.html" class="button background-color-prim-900 hover color-prim-400">Buy now</a>
+                <a href="index.html" class="button background-color-prim-700 hover color-prim-400">Back to homepage</a>
+            </div>          
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <nav>
+        <div class="logo">
+          <a href="" class="l-header">Logo</a>
+        </div>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </nav>
+      <nav>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Sign Up</a>
+      </nav>
+
+      <nav>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Provicy Policy</a>
+        <a href="#">Return Policy</a>
+      </nav>
+    </footer>
+  </body>
+</html>

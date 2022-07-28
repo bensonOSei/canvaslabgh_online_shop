@@ -15,11 +15,19 @@ body{
     margin: 0;
 }
 
+main{
+    height: 100%;
+}
+
 
 a{
     text-decoration: none;
 }
 
 button{
+    appearance: none;
+    border: none;
     padding: $size-m;
+    font-family: inherit;
+    cursor: pointer;
 }
